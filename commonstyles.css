@@ -1,0 +1,96 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+.brandicon
+{
+    margin: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navlinks ul
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    list-style: none;
+    
+}
+
+.navlinks li
+{
+    padding: 1rem;
+    display: block;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navlinks li:hover{
+    color: orange;
+    background-color: black;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 10px;
+  }
+
+  .menuicon
+  {
+    position: absolute;
+    right:47vw;
+    cursor:pointer;
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+.menuicon{
+    display: block;
+}    
+
+.header
+{
+    flex-direction: column;
+    align-items: flex-start;
+}
+ 
+.navlinks
+{
+    align-self: center;
+    width: 100%;
+    display: none;
+}
+.navlinks ul
+  {
+    flex-direction: column;
+    
+    
+  }
+  .navlinks li 
+  {
+    padding: 0.5rem 1rem;
+  }
+ 
+}

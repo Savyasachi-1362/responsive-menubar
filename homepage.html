@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="commonstyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="header">
+        <div class="brandicon" >Brand Name</div>
+        <div class="menuicon"onclick=toggler()>
+            <div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+        </div>
+        <div  class="navlinks">
+            <ul>
+                <li onclick=toggler()>Home</li>
+                <li onclick=toggler()>Programs</li>
+                <li onclick=toggler()>About Us</li>
+                <li onclick=toggler()>Sign Up!</li>
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+<script>
+    function toggler()
+    {
+        var menubar=document.getElementsByClassName("navlinks")[0]
+        
+        if (menubar.style.display === "none") {
+    menubar.style.display = "block";
+  } else {
+    menubar.style.display = "none";
+  }
+}
+    
+    
+</script>
+</html>
